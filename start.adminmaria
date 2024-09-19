@@ -1,0 +1,16 @@
+#!/bin/bash
+
+# Entrar no diretório onde o phpMyAdmin está localizado
+cd ~/resources/local/phpMyAdmin
+
+# Copiar os arquivos de configuração necessários
+cp ~/resources/configs/phpMyAdmin/config.inc.php config/
+
+# Iniciar o phpMyAdmin ou outro cliente baseado em servidor
+# Aqui, estou assumindo que o phpMyAdmin está sendo servido por um servidor Apache ou Nginx
+
+# Exemplo se você estiver utilizando o PHP embutido para rodar localmente
+nohup php -S localhost:8080 &> ~/logs/phpMyAdmin.log &
+
+# Abrir o phpMyAdmin no navegador (opcional, se você quiser acessar diretamente)
+# xdg-open http://localhost:8080
