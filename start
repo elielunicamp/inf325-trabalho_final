@@ -3,15 +3,11 @@
 mkdir logs
 
 
-chmod +x ~/binder/start.mongodb 
-chmod +x ~/binder/start.adminmongo 
-chmod +x ~/binder/start.cassandra
+chmod +x ~/binder/start.mariadb 
+chmod +x ~/binder/start.adminmaria 
 
-# starting mongodb
-~/binder/start.mongodb   &
-
-# starting cassandra
-~/binder/start.cassandra   &
+# starting mariadb
+~/binder/start.mariadb   &
 
 # starting redis in parallel
 ~/binder/start.redis &
