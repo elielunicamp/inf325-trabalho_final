@@ -1,0 +1,15 @@
+# Ferramentas básicas
+htop
+vim
+curl
+wget
+net-tools
+locate
+
+# MariaDB dependencies
+libmariadb-dev  # Necessário para o conector MariaDB em Python
+
+# Redis dependencies
+gcc
+build-essential
+libc-bin
