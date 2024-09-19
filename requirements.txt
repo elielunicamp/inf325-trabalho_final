@@ -1,37 +1,37 @@
 ###############################################################
-#          jupyter/jupyterlab extensions/kernels              #
+#          Jupyter/JupyterLab Extensions/Kernels              #
 ###############################################################
-# # beakerx (kernels: java, clojure, groovy, scala, kotlin, sql) and dependencies
-# beakerx
-# py4j
 
-# # sos - script of scripts (multiple kernels)
-# sos
-# sos-notebook
+# MariaDB driver for Python
+mariadb
 
-# ipython-sql
+# SQLAlchemy and SQL kernel for interacting with databases
 sqlalchemy
 ipython-sql
 jupyterlab_sql
-mysqlclient
 
-#jupyter/jupyterlab extensions
+# Redis driver for Python
+redis
+
+# Jupyter/JupyterLab extensions
 jupyterlab
 ipywidgets
-RISE
+RISE  # Slideshow extension for Jupyter notebooks
 
+# Proxies for running other services inside JupyterLab
 jupyter-server-proxy
 jupyter-vscode-proxy
 
 ###############################################################
-#          /jupyter/jupyterlab extensions/kernels              #
+#          Additional Python packages for Jupyter kernels      #
 ###############################################################
 
-pymongo==3.10.0
-imongo-kernel
+# Pretty print library for Python
 pprintpp
-cqljupyter
-cassandra-driver
 
+# Faker library for generating fake data (useful for testing)
 Faker
-redis
+
+###############################################################
+#          End of Jupyter/JupyterLab Extensions/Kernels        #
+###############################################################
