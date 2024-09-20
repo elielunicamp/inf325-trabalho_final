@@ -1,0 +1,6 @@
+mariadb
+sqlalchemy
+redis
+ipython-sql
+pprintpp
+Faker
