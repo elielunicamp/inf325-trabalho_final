@@ -1,8 +1,8 @@
 #!/bin/bash
 
+# Configura variáveis de ambiente para o Redis
+export REDIS_HOST='seu_redis_remoto'
+export REDIS_PORT=6379
+export REDIS_DB=0
 
-nohup  redis-stack-server --daemonize yes &> ~/logs/redis-$REDIS_VERSION.log &
-
-sleep 10
-
-redis-cli ping
+echo "Conexão com Redis configurada."
