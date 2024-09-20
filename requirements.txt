@@ -1,37 +1,16 @@
-###############################################################
-#          Jupyter/JupyterLab Extensions/Kernels              #
-###############################################################
-
-# MariaDB driver for Python
+# Conector para MariaDB
 mariadb
 
-# SQLAlchemy and SQL kernel for interacting with databases
-sqlalchemy
+# ORM para MariaDB
+sqlalchemy  
+
+# Ferramentas para SQL no Jupyter Notebooks
 ipython-sql
-jupyterlab_sql
 
-# Redis driver for Python
-redis
+# Conector para Redis
+redis  
 
-# Jupyter/JupyterLab extensions
-jupyterlab
-ipywidgets
-RISE  # Slideshow extension for Jupyter notebooks
-
-# Proxies for running other services inside JupyterLab
-jupyter-server-proxy
-jupyter-vscode-proxy
-
-###############################################################
-#          Additional Python packages for Jupyter kernels      #
-###############################################################
-
-# Pretty print library for Python
-pprintpp
-
-# Faker library for generating fake data (useful for testing)
-Faker
-
-###############################################################
-#          End of Jupyter/JupyterLab Extensions/Kernels        #
-###############################################################
+# Outras bibliotecas úteis
+pprintpp  
+Faker  # Para gerar dados fictícios
+jupyterlab  # Para trabalhar com JupyterLab no Binder
