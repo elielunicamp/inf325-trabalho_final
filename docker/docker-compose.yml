@@ -3,10 +3,7 @@ version: '3.8'
 services:
   mariadb:
     image: mariadb:latest
-    build:
-      context: ./mariadb
-      dockerfile: Dockerfile
-    container_name: epinga_maridadb
+    container_name: epinga_mariadb
     environment:
       MARIADB_ROOT_PASSWORD: epinga_db_master_password
       MARIADB_DATABASE: epinga_db
@@ -19,14 +16,25 @@ services:
 
   redis:
     image: redis:latest
-    build:
-      context: ./redis
-      dockerfile: Dockerfile
     container_name: epinga_redis
     ports:
       - "6379:6379"
     volumes:
       - redis_data:/data
+  
+  jupyter:
+    build:
+      context: ./jupyter
+    container_name: epinga_jupyter
+    ports:
+      - "8888:8888"
+    volumes:
+      - .:/home/jovyan/work  
+    environment:
+      JUPYTER_ENABLE_LAB: "yes"
+    depends_on:
+      - mariadb
+      - redis    
 
 volumes:
   mariadb_data:

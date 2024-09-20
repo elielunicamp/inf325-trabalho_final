@@ -12,3 +12,4 @@ RUN chmod +x /docker-entrypoint-initdb.d/init-redis.sh
 
 # Run Redis with the custom configuration
 CMD ["redis-server", "/usr/local/etc/redis/redis.conf"]
+
