@@ -1,5 +1,0 @@
-#!/bin/bash
-
-# Adicionar permissões ao usuário admin no banco de dados MariaDB remoto
-echo "Configurando permissões de admin no MariaDB remoto..."
-# Aqui você poderia executar queries para dar permissões, se necessário
