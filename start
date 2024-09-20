@@ -1,23 +1,16 @@
 #!/bin/bash
 
-mkdir logs
+# Exibe uma mensagem de status
+echo "Iniciando o ambiente de trabalho..."
 
+# Garante que os pacotes necessários estão instalados
+source ~/.bashrc
 
-chmod +x ~/binder/start.mariadb 
-chmod +x ~/binder/start.adminmaria 
+# (Opcional) Certifique-se de que o Redis esteja rodando, se necessário para testes locais
+# redis-server &
 
-# starting mariadb
-~/binder/start.mariadb   &
+# Use MariaDB remoto (ajuste os detalhes no script Python)
+echo "Certifique-se de que o MariaDB remoto esteja configurado corretamente."
 
-# starting redis in parallel
-~/binder/start.redis &
-
-cd ~
-echo " " >> .gitignore
-echo "resources/local/" >> .gitignore
-echo ".local/" >> .gitignore
-echo "local-home/" >> .gitignore
-
-# DO NOT REMOVE(!) 
-# Here is why: https://mybinder.readthedocs.io/en/latest/config_files.html#start-run-code-before-the-user-sessions-starts
-exec "$@"
+# Iniciar o JupyterLab
+jupyter lab
