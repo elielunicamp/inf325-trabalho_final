@@ -1,6 +1,7 @@
 mariadb
 sqlalchemy
-redis
 ipython-sql
+jupyterlab_sql
+redis
 pprintpp
 Faker
