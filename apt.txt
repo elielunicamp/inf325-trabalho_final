@@ -1,0 +1,6 @@
+libmariadb-dev  # MariaDB Connector/C para compilar mariadb para Python
+htop
+vim
+curl
+wget
+net-tools
