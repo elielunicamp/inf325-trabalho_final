@@ -1,18 +1,10 @@
 #!/bin/bash
 
-# Criar diretório para dados do MariaDB (opcional, dependendo da configuração)
-mkdir -p ${MARIADB_HOME}/data
+# Aqui você pode configurar as variáveis de ambiente para o MariaDB
+# Por exemplo:
+export MARIADB_USER='seu_usuario'
+export MARIADB_PASSWORD='sua_senha'
+export MARIADB_HOST='seu_host_remoto'
+export MARIADB_DATABASE='seu_banco'
 
-# Iniciar o MariaDB Server
-nohup ${MARIADB_HOME}/bin/mysqld --datadir=${MARIADB_HOME}/data &> ~/logs/mariadb-${MARIADB_VERSION}.log &
-
-# Aguardar alguns segundos para garantir que o servidor iniciou corretamente
-sleep 10
-
-# Comandos para criar banco de dados e importar dados, se aplicável
-# Exemplo: Importando um dump SQL (ajuste o caminho do arquivo conforme necessário)
-# mysql -u root -pPASSWORD -e "CREATE DATABASE places;"
-# mysql -u root -pPASSWORD places < ~/resources/datasets/restaurants.sql
-
-# Exemplo: Restaurando um dump completo de um banco de dados
-# mysql -u root -pPASSWORD < ~/resources/datasets/backup.sql
+echo "Conexão com MariaDB configurada."
