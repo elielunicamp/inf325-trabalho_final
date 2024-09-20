@@ -1,15 +1,12 @@
-# Ferramentas básicas
+# MariaDB Connector/C, necessário para instalar o conector MariaDB em Python
+libmariadb-dev  
+
+# Redis server para testes, se necessário, mas será usado principalmente via o conector Python
+redis-server
+
+# Ferramentas úteis
 htop
 vim
 curl
 wget
 net-tools
-locate
-
-# MariaDB dependencies
-libmariadb-dev  # Necessário para o conector MariaDB em Python
-
-# Redis dependencies
-gcc
-build-essential
-libc-bin
