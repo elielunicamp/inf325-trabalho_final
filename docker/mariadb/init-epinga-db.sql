@@ -54,7 +54,7 @@ CREATE TABLE IF NOT EXISTS orders_itens (
     unit_price FLOAT,
     order_total FLOAT,
     discount FLOAT,
-    FOREIGN KEY (id_order) REFERENCES order(id),
+    FOREIGN KEY (id_order) REFERENCES orders(id),
     FOREIGN KEY (id_product) REFERENCES product(id)
 );
 
