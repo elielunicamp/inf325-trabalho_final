@@ -1,7 +1,0 @@
-mariadb
-sqlalchemy
-ipython-sql
-jupyterlab_sql
-redis
-pprintpp
-Faker
