@@ -7,22 +7,22 @@ This is a database lab of a project e-pinga;
 ## Requirements
 
 ```bash
-  #Python dependencies
-  mariadb
-  sqlalchemy
-  ipython-sql
-  jupyterlab_sql
-  redis
-  pprintpp
-  Faker
-  
-  # MariaDB dependencies
-  libmariadb-dev  # Necessário para o conector MariaDB em Python
+#Python dependencies
+mariadb
+sqlalchemy
+ipython-sql
+jupyterlab_sql
+redis
+pprintpp
+Faker
 
-  # Redis dependencies
-  gcc
-  build-essential
-  libc-bin
+#MariaDB dependencies
+libmariadb-dev  # Necessário para o conector MariaDB em Python
+
+#Redis dependencies
+gcc
+build-essential
+libc-bin
 ```
 
 ## Tools
